@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Donate">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#004c00">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/backarrow"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:weightSum="1"
+        android:layout_below="@+id/toolbar"
+        >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icon"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.1"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:text="Let's Raise your Hands to Donate For Homeless People"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit ="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="#107797"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/donate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Donate Amount that needy persons"
+        android:background="#48C9B0"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
+
+
+<!--
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="200dp"
+android:layout_marginTop="20dp"
+android:weightSum="3"
+android:layout_marginStart="10dp"
+android:layout_marginEnd="10dp">
+
+
+<ImageView
+    android:id="@+id/life"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:src="@drawable/life"
+    android:layout_weight="1"
+    android:padding="2dp"/>
+<ImageView
+    android:id="@+id/quote"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:src="@drawable/quote"
+    android:layout_weight="1"
+    android:padding="2dp"/>
+<ImageView
+    android:id="@+id/you"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:src="@drawable/you"
+    android:layout_weight="1"
+    android:padding="2dp"/>
+
+</LinearLayout>-->

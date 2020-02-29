@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <LinearLayout
+        android:id="@+id/admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/adminpic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="0.2"
+        android:src="@drawable/icon"
+        />
+    <TextView
+        android:id="@+id/adminname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.5"
+        android:gravity="start"
+        android:text="ADMIN"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/admin"
+        >
+
+        <RelativeLayout
+            android:id="@+id/real"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            >
+         <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+        />
+
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_below="@+id/image"
+                android:layout_marginTop="10dp">
+
+               <!-- <ImageView
+                    android:id="@+id/like"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/heart"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/likeanimate"
+                    />-->
+                <com.like.LikeButton
+                    app:icon_type="heart"
+                    android:id="@+id/like"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.1"
+                    />
+
+                <ImageView
+                    android:id="@+id/comment"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/chat"
+                    android:layout_weight="0.1"/>
+            </LinearLayout>
+
+
+
+            <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

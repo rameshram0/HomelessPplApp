@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativelayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#004c00">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#fff">
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:layout_centerHorizontal="true"
+         android:id="@+id/profilepic"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icon"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:text="How Can we worship a homeless man on sunday and ignore one on monday"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit ="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilepic"
+        android:textAllCaps="true"
+        android:textColor="#BE1022"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/online"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/online"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp">
+
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/grid"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/newsfeed"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:text="News Feed"
+                android:textColor="#fff"
+                android:background="#21A07B"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/profile"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_gravity="start"
+                android:text="profile"
+               android:textColor="#fff"
+               android:background="#107797"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/addpeople"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:text="add orphan"
+                android:textColor="#fff"
+                android:background="#55436C"/>350778
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/donate"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_gravity="start"
+                android:text="donate money"
+                android:textColor="#fff"
+                android:background="#B91A5B"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/sponsers"
+                android:layout_width="150dp"
+                android:layout_height="110dp"
+                android:layout_gravity="start"
+                android:text="sponsors"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="#7c2461"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+
+
+        </LinearLayout>
+    </GridLayout>
+
+        <TextView
+            android:id="@+id/lastseen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grid"
+            android:gravity="center"
+            android:text="Lastseen"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:textStyle="italic"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+    <!-- <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textStyle="bold"
+             android:gravity="center"
+             android:textSize="20sp"
+             android:layout_marginTop="20dp"
+             android:id="@+id/profile_name"
+             android:layout_below="@+id/"/>
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textStyle="bold"
+             android:gravity="center"
+             android:textSize="18sp"
+             android:layout_marginTop="10dp"
+             android:id="@+id/profile_email"/>
+
+        <Button
+            android:id="@+id/lgout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="logout"/>
+    -->

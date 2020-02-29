@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1038837975371",
+    "firebase_url": "https://fit-force-223308.firebaseio.com",
+    "project_id": "fit-force-223308",
+    "storage_bucket": "fit-force-223308.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038837975371:android:d230f202bb9c83e700c0ce",
+        "android_client_info": {
+          "package_name": "com.example.homelesspplapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1038837975371-gj9bqfjuirdttfemjqals2a1bueihc69.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.homelesspplapp",
+            "certificate_hash": "464f0a7ed64dced7c4b0fd92c95a6322f679a394"
+          }
+        },
+        {
+          "client_id": "1038837975371-91b5nptvb761n2lh697vud2do9cg9bat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ_sYGfMlEhmzpG7FdPggDqM09ZSSoWpU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1038837975371-91b5nptvb761n2lh697vud2do9cg9bat.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

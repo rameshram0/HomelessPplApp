@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:background="@color/white"
+    >
+
+
+
+        <TextView
+            android:id="@+id/enteramt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Amount"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:textColor="#000"
+            />
+
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enteramt"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:textCursorDrawable="@color/black"
+            android:backgroundTint="@color/black"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount"
+            android:layout_margin="10dp"
+            android:text="Proceed Payment"
+            android:textColor="@color/white"
+            android:background="#73C6B6"/>
+
+    </RelativeLayout>
+
+
+
