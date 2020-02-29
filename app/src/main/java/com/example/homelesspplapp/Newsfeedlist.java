@@ -1,6 +1,6 @@
 package com.example.homelesspplapp;
 
-public class Shoplist {
+public class Newsfeedlist {
 
 
 

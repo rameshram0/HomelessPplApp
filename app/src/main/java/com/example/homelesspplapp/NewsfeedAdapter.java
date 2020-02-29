@@ -1,16 +1,11 @@
 package com.example.homelesspplapp;
 
 import android.content.Context;
-import android.media.MediaPlayer;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.MediaController;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.VideoView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -20,16 +15,13 @@ import com.like.OnLikeListener;
 
 import java.util.List;
 
-import static com.facebook.FacebookSdk.getApplicationContext;
-import static com.paytm.pgsdk.easypay.manager.PaytmAssist.getContext;
-
 public class NewsfeedAdapter extends RecyclerView.Adapter<NewsfeedAdapter.ViewHolder> {
 
     private Context context;
-    private List<Shoplist> list;
+    private List<Newsfeedlist> list;
     private  OnNoteListener onNoteListener;
 
-    public NewsfeedAdapter(Context context, List<Shoplist> list,OnNoteListener onNoteListener) {
+    public NewsfeedAdapter(Context context, List<Newsfeedlist> list, OnNoteListener onNoteListener) {
         this.context = context;
         this.list = list;
         this.onNoteListener=onNoteListener;
@@ -44,7 +36,7 @@ public class NewsfeedAdapter extends RecyclerView.Adapter<NewsfeedAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Shoplist movie = list.get(position);
+        Newsfeedlist movie = list.get(position);
 
         holder.title.setText(movie.getTitle());
 

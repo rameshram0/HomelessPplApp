@@ -6,16 +6,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.net.ConnectivityManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.MediaController;
-import android.widget.Toast;
-import android.widget.VideoView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -37,7 +32,7 @@ public class Newsfeed extends AppCompatActivity implements NewsfeedAdapter.OnNot
 
     private LinearLayoutManager linearLayoutManager;
     //private DividerItemDecoration dividerItemDecoration;
-    private List<Shoplist> movieList;
+    private List<Newsfeedlist> movieList;
     private RecyclerView.Adapter adapter;
 
     ImageView like, comment;
@@ -96,7 +91,7 @@ public class Newsfeed extends AppCompatActivity implements NewsfeedAdapter.OnNot
 
                         JSONObject jsonObject = array.getJSONObject(i);
 
-                        Shoplist movie = new Shoplist();
+                        Newsfeedlist movie = new Newsfeedlist();
                         movie.setTitle(jsonObject.optString("title").replaceAll("\"", ""));
 
                         movie.setImage(jsonObject.optString("image"));
